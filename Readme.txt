@@ -2,9 +2,9 @@ Connectivity Project: Serial->LoRa->Serial communication using (Tiva TM4C123G la
 
 
 
-                   *******                                ********                             ********
- Actuator <------> *GPIO * <------> Transmitter  <------> * LoRa * <------>  Receiver <------> * UART * <------>  Computer       
-(TM4C123G          *******          (TM4C123G)            ********           (ESP32)           ********          (notebook)
+                   ********                                         ********                          ********                                         ********
+ Actuator <------> * GPIO * <------> Transmitter/Receiver  <------> * UART * <------> Module <------> * LoRa * <------>  Receiver/Transmitter <------> * UART * <------>  Computer       
+(TM4C123G          ********               (TM4C123G)                ********       (E32-868T20D)      ********                 (ESP32)                 ********          (notebook)
   Button)
 
 
