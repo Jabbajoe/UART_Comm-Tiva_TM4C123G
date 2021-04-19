@@ -3,7 +3,7 @@
          (IDE: VS Code + PlatformIO)    
 
 
-
+***************************************************************************************************************************************************************************************
 Connectivity Project: Serial->LoRa->Serial communication using (Tiva TM4C123G lauchpad + Ebyte's E32-868T20D LoRa module) and Heltec's ESP32 WiFi LoRa (V2)
 
 
