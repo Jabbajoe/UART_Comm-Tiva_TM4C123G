@@ -13,6 +13,8 @@ module) and Heltec's ESP32 WiFi LoRa (V2)
  Actuator <------> * GPIO * <------> Transmitter/Receiver  <------> * UART * <------> Module <------> * LoRa * <---
 (TM4C123G          ********               (TM4C123G)                ********       (E32-868T20D)      ********
   Button)
+          
+          
                                      ********
  --->  Receiver/Transmitter <------> * UART * <------> Computer       
              (ESP32)           -     ********         (notebook)
