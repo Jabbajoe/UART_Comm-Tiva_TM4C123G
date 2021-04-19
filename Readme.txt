@@ -3,10 +3,12 @@ Connectivity Project: Serial->LoRa->Serial communication using (Tiva TM4C123G la
 
 
                    ********                                         ********                          ********                                         ********
- Actuator <------> * GPIO * <------> Transmitter/Receiver  <------> * UART * <------> Module <------> * LoRa * <------>  Receiver/Transmitter <------> * UART * <------>  Computer       
-(TM4C123G          ********               (TM4C123G)                ********       (E32-868T20D)      ********                 (ESP32)                 ********          (notebook)
-  Button)
-
+ Actuator <------> * GPIO * <------> Transmitter/Receiver  <------> * UART * <------> Module <------> * LoRa * <------>  Receiver/Transmitter <------> * UART * <------> Computer       
+(TM4C123G          ********               (TM4C123G)                ********       (E32-868T20D)      ********                 (ESP32)            -    ********         (notebook)
+  Button)                                                                                                                                         -
+                                                                                                                                                  -    *******
+                                                                                                                                                  ---> * I²C * <------> OLED 
+                                                                                                                                                       *******       (SSD1306)
 
 TM4C123G lauchpad: https://www.ti.com/lit/ug/spmu296/spmu296.pdf?ts=1617185733555&ref_url=https%253A%252F%252Fdev.ti.com%252F
 Ebyte's E32-868T20D: https://www.ebyte.com/en/product-view-news.aspx?id=132
