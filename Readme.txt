@@ -15,8 +15,8 @@ module) and Heltec's ESP32 WiFi LoRa (V2)
   Button)     -
               -
  Actuator <----        
- (TM4C123G
-  red LED)               
+(TM4C123G
+ red LED)               
 
                                      ********
  --->  Receiver/Transmitter <------> * UART * <------> Computer       
