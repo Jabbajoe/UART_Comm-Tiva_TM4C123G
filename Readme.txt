@@ -1,5 +1,5 @@
 
-                                  ///////// SOURCE CODE FOR TM4C123G //////
+                                  ///////// SOURCE CODE FOR TM4C123G /////////
                                            (IDE: VS Code + PlatformIO)    
 
 
