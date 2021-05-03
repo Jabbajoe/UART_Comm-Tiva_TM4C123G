@@ -1,22 +1,26 @@
 #include "basicfunctions.h"
 
+char sendbuffer[] = "Hello World!";
 
 int main(void) {
-    char rx;
-
-    //Initial configuration
+    //Init board
     BoardInit();
-    //Config and init Serial_0 e Serial_1
-    SerialConfig();
+
+    //Init and config Serial_1
     Serial1Config();
-    
-    while (1) {
-        //Print via UART_0 (Serial_0)
-        SerialPrintln("Hello World");
-        rx = uart_recv_blocking(UART0);
-        SerialPrint("Cool! You have entered: ");
-        uart_send_blocking(UART0,rx);
+
+    //Loop
+    while(1) {
+        //Send message via UART_1
+        SerialPrint(UART1,sendbuffer);
+
+        //delay via software. what is the correlation between USER_DELAY and time (in second)? Is it stable?
+        //SoftwareDelay(25000000);
+
+        //delay in milliseconds via interrupt from SysTick
+        HardwareDelay(5000);
     }
 
     return 0;
 }
+
